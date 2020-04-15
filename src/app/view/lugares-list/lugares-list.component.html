@@ -1,0 +1,5 @@
+<h2>Lugares</h2>
+
+<div *ngFor="let lugar of service.lugares; let i = index">
+  <app-lugares-view [lugar]="lugar" [index]="i"></app-lugares-view>
+</div>

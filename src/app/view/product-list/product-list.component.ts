@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { products } from '../data/products';
+import { products } from '../../data/products';
 
 @Component({
   selector: 'app-product-list',
@@ -8,8 +8,4 @@ import { products } from '../data/products';
 })
 export class ProductListComponent {
   public products = products;
-
-  public share() {
-    alert('The product has been shared!');
-  }
 }

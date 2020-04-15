@@ -1,7 +1,9 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { ProductListComponent } from './product-list/product-list.component';
-import { ProductViewComponent } from './product-view/product-view.component';
+import { RouterModule, Routes } from '@angular/router';
+import { ProductListComponent } from './view/product-list/product-list.component';
+import { ProductViewComponent } from './view/product-view/product-view.component';
+import { LugaresListComponent } from './view/lugares-list/lugares-list.component';
+import { LugaresViewComponent } from './view/lugares-view/lugares-view.component';
 
 
 const routes: Routes = [
@@ -12,6 +14,14 @@ const routes: Routes = [
   {
     path: 'product-view/:id',
     component: ProductViewComponent
+  },
+  {
+    path: 'lugares-list',
+    component: LugaresListComponent
+  },
+  {
+    path: 'lugares-view/:id',
+    component: LugaresViewComponent
   }
 ];
 

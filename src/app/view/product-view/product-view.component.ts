@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { products } from '../data/products';
+import { products } from '../../data/products';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
