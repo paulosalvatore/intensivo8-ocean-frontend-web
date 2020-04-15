@@ -1,0 +1,16 @@
+<div *ngIf="product">
+  <h3>
+    <a [title]="product.name + ' details'"
+       [routerLink]="['/product-view', index]">
+      {{ product.name }}
+    </a>
+  </h3>
+
+  <p *ngIf="product.description">
+    Description: {{ product.description }}
+  </p>
+
+  <button (click)="share()">
+    Share Product
+  </button>
+</div>
